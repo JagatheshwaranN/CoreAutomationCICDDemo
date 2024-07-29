@@ -36,3 +36,49 @@ Automated Deployment Process
 ----------------------------
 With the webhook in place, every time a commit is made to the GitHub repository, the webhook triggers the Jenkins job automatically.
 The Jenkins job then builds the project and deploys the artifact to JFrog Artifactory without any manual intervention.
+
+SocketXP
+--------
+SocketXP is a cloud-based service that provides secure and reliable tunneling solutions, often used for exposing local servers or 
+applications to the internet. It is particularly useful for developers and IT professionals who need to access and test their 
+applications remotely. Here are some key features and uses of SocketXP:
+
+Key Features and Use Cases
+--------------------------
+Secure Remote Access
+--------------------
+Provides a secure way to access IoT devices behind firewalls or NAT routers.
+Enables remote SSH access for configuration and troubleshooting. 
+
+IoT Device Management
+---------------------
+Offers a centralized platform to manage multiple IoT devices.   
+Facilitates remote configuration, software updates, and monitoring.
+
+Public Web URL Generation
+-------------------------
+Creates unique public URLs for private web applications running on IoT devices.   
+Allows external services to interact with IoT devices securely.   
+
+It provides public URLs for your local applications, making it easy to share and 
+access them from anywhere. This is particularly useful for webhooks, testing APIs,
+and remote debugging.
+
+Data Transfer
+-------------
+Securely transfers data between IoT devices and cloud-based applications. 
+
+Github Webhook
+--------------
+A GitHub webhook is a feature that allows you to receive real-time notifications when certain events happen in a GitHub repository.
+These notifications are sent to a specified URL via an HTTP POST request, allowing external services or applications to react to 
+these events automatically. Webhooks can be configured to listen for specific events such as pushes, pull requests, issues, and more. 
+This makes them highly customizable and efficient for various workflows.
+
+Uses of GitHub Webhooks in CICD
+-------------------------------
+Webhooks can trigger CI/CD pipelines automatically when code is pushed to a repository. This ensures that tests are run, and deployments
+are made seamlessly without manual intervention.
+
+Detailed steps to achieve the above use case
+--------------------------------------------
