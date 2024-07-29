@@ -1,5 +1,6 @@
 package core.bundle.pageObject;
 
+import core.bundle.pageComponent.HolidayPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import core.bundle.abstractComponent.TravelFactory;
@@ -35,6 +36,10 @@ public class TravelHomePage {
 
     public FooterNavigation getFooterNavigation() {
         return new FooterNavigation(driver, footerPageSectionElement);
+    }
+
+    public HolidayPackage getHolidayPackage() {
+        return new HolidayPackage();
     }
 
     public void setFlightBookingType(String travelType){
